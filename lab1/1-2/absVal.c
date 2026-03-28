@@ -4,5 +4,5 @@
  * - Ex) absVal(2) = 2, absVal(-1) = 1
  */
 int absVal(int x) {
-  return 0; // TODO
+  return (((x>>31)^x) + ((x>>31)&1)); // TODO
 }
