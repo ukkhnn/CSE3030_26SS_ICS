@@ -3,5 +3,6 @@
  * - Ex) conditional(2, 4, 5) = 4, conditional(0, 1, 2) = 2
  */
 int conditional(int x, int y, int z) {
-  return 0; // TODO
+  int mask = ~(!!x) + 1;
+  return (mask & y) | (~mask & z); // TODO
 }
