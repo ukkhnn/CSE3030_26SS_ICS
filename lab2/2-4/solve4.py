@@ -9,6 +9,8 @@ from helper import Program
 def solve():
     prog = Program("./problem4.bin")
     print(prog.read_line()) # Read the initial message of the program.
+    prog.send_line("abcdeeedcba")
+    print(prog.read_line())    
 
 
 if __name__ == "__main__":
