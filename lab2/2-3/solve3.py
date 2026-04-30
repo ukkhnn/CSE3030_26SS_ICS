@@ -9,7 +9,12 @@ from helper import Program
 def solve():
     prog = Program("./problem3.bin")
     print(prog.read_line()) # Read the initial message of the program.
-
+    prog.send_line("3")
+    print(prog.read_line())    
+    prog.send_line("7")
+    print(prog.read_line())    
+    prog.send_line("0")
+    print(prog.read_line())    
 
 if __name__ == "__main__":
     solve()
