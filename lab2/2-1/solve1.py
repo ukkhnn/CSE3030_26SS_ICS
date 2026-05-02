@@ -9,7 +9,7 @@ from helper import Program
 def solve():
     prog = Program("./problem1.bin")
     print(prog.read_line()) # Read the initial message of the program.
-    prog.send_line("Hello?") # Send your input to the program.
+    prog.send_line("CSE3030@Sogang") # Send your input to the program.
     print(prog.read_line()) # Read the response from the program.
 
 
